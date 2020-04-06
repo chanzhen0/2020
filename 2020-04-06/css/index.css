@@ -1,0 +1,44 @@
+
+ .container {
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+
+
+	.container {
+		max-width: 900px;
+	}
+	.nav {
+		flex-direction: row;
+	}
+   .float{
+	 display: inline-block;
+ }
+	.link {
+		padding-left: .5rem !important;
+		padding-right: .5rem !important;
+	}
+}
+
+.Box {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px auto;
+}
+
+.Box .card {
+	margin-right: 1%;
+	margin-bottom: 10px;
+	width: 19.2%;
+}
+
+.Box .card:nth-child(5n+5) {
+	margin-right: 0;
+}
+
+.Box .card .title {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
