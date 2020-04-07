@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+     //  match  split  replace  跟正则的结合使用方式；
+  // 1 -获取一个字符串中出现次数最多的字符 及其 次数 
+  var str = 'ertefvzdgfergsegfsdrgrgfbshtrh';
+    var result = maxN(str);
+    function maxN(str){
+        var json = {};
+        str.replace(/(\w{1})/g,function($1){
+          debugger
+            json[$1] ? json[$1]+=1 : json[$1] = 1;
+        });
+        //存储出现次数最多的值和次数
+        var number = '';
+        var num = 0;
+        //遍历json  使用打擂算法统计需要的值
+        for(var j in json){
+            //如果当前项大于下一项
+            if (json[j]>num) {
+                //就让当前值更改为出现最多次数的值
+                num = json[j];
+                number = j;
+            }
+        }
+        return {
+            number:number,
+            num:num
+        }
+    }
+    document.write('该字符串出现'+ result.num+'次的'+ result.number);
+</script>
+<script>
+
+//2- 实现一个千分符的函数 
+let num = '124252343'  
+let r = num.replace(/(\d{1,3})(?=(\d{3})+$)/g, '$1,')
+console.log(r) //‘124,252,343’
+
+</script>
+</body>
+</html>
