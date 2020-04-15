@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box {
+            width: 600px;
+            height: 400px;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        #box ul {
+            overflow: hidden;
+            width: 30000px;
+        }
+
+        #box ul li {
+            float: left;
+            width: 600px;
+            height: 400px;
+        }
+
+        #box ul li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #box ul li:nth-child(2n) {
+            background-color: blanchedalmond;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: rgb(236, 220, 442);
+        }
+
+        .btn_box {
+            position: initial;
+            z-index: 10;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .btn_box div {
+            width: 30px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .left_btn {
+            position: fixed;
+            left: 460px;
+            bottom: 200px;
+        }
+
+        .right_btn {
+            position: fixed;
+            right: 460px;
+            bottom: 200px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+        <ul>
+            <li>
+                <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1713396441,1487163637&fm=26&gp=0.jpg"
+                    alt="">
+            </li>
+            <li>
+                <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3862909385,1273495478&fm=26&gp=0.jpg"
+                    alt="">
+            </li>
+            <li>
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587480325739&di=23ab0c667b3a621f8f5a43e4cf11524f&imgtype=0&src=http%3A%2F%2Fhimg2.huanqiu.com%2Fattachment2010%2F2013%2F0308%2F20130308084510673.jpg"
+                    alt="">
+            </li>
+            <li>
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587480325738&di=8fd6d566d9035fca62bdba89a63f97fc&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Ff%2F53c4c7a903bc0.jpg"
+                    alt="">
+            </li>
+            <li>
+                <img src="https://woshiyizhiyouyu.github.io/homework-project/04-21/images/6.png" alt="">
+            </li>
+            <li>
+                <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1713396441,1487163637&fm=26&gp=0.jpg"
+                    alt="">
+            </li>
+            <li style="background-color: rgb(236, 206,31);"></li>
+        </ul>
+    </div>
+    <div class="btn_box">
+        <div class="left_btn">
+            < </div>
+                <div class="right_btn"> > </div>
+        </div>
+</body>
+<script>
+    let box = document.querySelector('#box');
+    let ul = document.querySelector('ul');
+    let left = document.querySelector('.left_btn'),
+        right = document.querySelector('.right_btn')
+    let start = 0;
+    let timer = null;
+    function move() {
+        timer = setInterval(() => {
+            start -= 600;
+            // ul.style.left = start  + 'px';
+            if (start < -3000) {
+                // 小于 -3000的时候 证明条已经出去了
+                // -3000的时候 我们显示的是伪第一张
+                start = 0;
+                ul.style.transition = 'none';
+                ul.style.transform = `translateX(${start}px)`;
+                // 闪到第一张之后  紧接着要网第二张移动 而不是再等1.5s;
+
+            } else {
+                ul.style.transition = 'all 0.3s';
+            }
+            ul.style.transform = `translateX(${start}px)`;
+        }, 1500);
+    }
+    move();
+    //滑过盒子
+    box.onmouseenter = function () {
+        clearInterval(timer);
+    }
+    // 离开盒子
+    box.onmouseleave = function () {
+        move();
+    }
+    right.onclick = function () {
+        start -= 600;
+        if (start < -3600) {
+            start = 0;
+            ul.style.transition = 'none';
+            ul.style.transform = `translateX(${start}px)`;
+            let l = ul.offsetLeft;//读写分离，到这边就重现渲染一次，读取操作会让浏览器重新渲染
+            start -= 600;
+            ul.style.transition = 'all 0.3s';
+        } else {
+            ul.style.transition = 'all 0.3s';
+        }
+        ul.style.transform = `translateX(${start}px)`;
+    };
+    left.onclick = function () {
+        start += 600;
+        console.log(start);
+
+        if (start === 0) {
+            start = -3600;
+            ul.style.transition = 'none';
+            ul.style.transform = `translateX(${start}px)`;
+            let l = ul.offsetLeft;//读写分离，到这边就重现渲染一次，读取操作会让浏览器重新渲染
+            start += 600;
+            ul.style.transition = 'all 0.3s';
+        } else {
+            ul.style.transition = 'all 0.3s';
+        }
+        ul.style.transform = `translateX(${start}px)`;
+    }
+
+</script>
+
+
+</html>
