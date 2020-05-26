@@ -1,0 +1,357 @@
+
+.main {
+    width: 1320px;
+    margin: 0 auto; 
+}
+.header nav {
+    background: url('../images/bg.jpg') no-repeat 50% 0;
+    height: 90px;
+    width: 100%;
+    padding-top: 66px;
+    position: relative;
+    z-index: 10;
+}
+
+.header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+.header nav ul .icon{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 83px;
+    height: 76px;
+}
+.header nav ul .icon1{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 53px;
+        right: 0px;
+        width: 83px;
+        height: 76px;
+
+}
+.header nav ul a:hover{
+    color:beige;
+}
+.header nav ul li a:nth-child(1){
+    margin-left: 22px;
+}
+ 
+.header nav ul li{
+    font-size: 18px;
+    margin-left: 100px;
+    
+}
+.header nav ul li a{
+    color: #f8b700;
+}
+.header nav ul li a img{
+    position: absolute;
+    top: 0;
+    left: 706px;
+}
+
+.header .main nav a:hover {
+   color: saddlebrown;
+}
+.head{
+    position: relative;
+    background: url("../images/背景大图1.jpg") no-repeat center center;
+    width: 1520px;
+    height: 985px;
+
+}
+.head .main i img{
+    position: absolute;
+    left: 260px;
+    top: 300px;
+    width: 968px;
+    height: 240px;
+}
+.head  .lie{
+    position: absolute;
+    left: 90px;
+    top: 650px;
+}
+.head .main ul li{
+    float: left;
+     width: 330px;
+    height: 230px;
+}
+.head lie a img {
+  width: 100%;
+}
+.head .btn {
+    position: absolute;
+    top: 530px;
+    left: 575px;
+}
+
+.head .btn h2 {
+    font-size: 30px; 
+}
+.head .btn h2 a:hover{
+    color:beige;
+}
+.head .btn h2 a{
+    color: black;
+    position: absolute;
+    left: 113px;
+    top: 32px;
+}
+
+.foot{
+    background-color: black;
+    min-width: 1200px;
+}
+
+.foot .footer{
+    padding-top: 35px;
+}
+
+.foot .main .cooperate{
+    margin-bottom: 50px;
+}
+
+.foot .main .cooperate>a {
+    float: left;
+}
+
+.foot .main .cooperate a {
+    color: cornsilk;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.foot .main .cooperate p{
+    color: cornsilk;
+    float: right;
+    font-size: 14px;
+}
+
+.foot .main .cooperate h3 span {
+    color: cornsilk;
+}
+
+.foot .main .cooperate a:nth-of-type(1) i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    background: url("../images/icon6.png");
+    margin:0 20px;
+}
+
+.foot .main .cooperate a:nth-of-type(2) i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    background: url("../images/icon7.png");
+    margin-left:30px;
+    margin-right: 20px;
+}
+
+.foot .main .cooperate p a{
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    width: 96px;
+    background: url("../images/雷蛇.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.foot .main .cooperate a:nth-of-type(3) i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    background: url("../images/icon7.png");
+    margin-left:30px;
+    margin-right: 20px;
+}
+
+.foot .main .footLogo {
+    border-bottom:1px solid #282d32;
+    padding-bottom: 40px;
+}
+
+.foot .main .footLogo .logo {
+    float: left;
+}
+
+.foot .main .footLogo .logo a:nth-of-type(1) {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 85px;
+    width: 140px;
+    background: url("../images/Blizzard.png");
+    position: relative;
+    top: 8px;
+}
+
+.foot .main .footLogo .logo a:nth-of-type(2) {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 50px;
+    width: 125px;
+    background: url("../images/网易logo.png") no-repeat center center;
+
+}
+
+.foot .main .footLogo .text {
+    float: right;
+    width: 630px;
+}
+
+.foot .main .footLogo .text p,.foot .main .footLogo .text a {
+    color:gray;
+}
+
+.foot .main .footLogo .text p{
+    line-height: 20px;
+}
+
+.foot .main .footLogo .text p:nth-last-of-type(1) {
+    line-height: 35px;
+    vertical-align: bottom;
+}
+
+.foot .main .footLogo .text p:nth-of-type(1) a {
+    color:cornsilk; 
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.foot .main .footLogo .text p span {
+    margin: 0 5px;
+    color: cornsilk;
+}
+
+.foot .main .footLogo .text p .icon1 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../images/icon.png") no-repeat center center;  
+}
+
+.foot .main .footLogo .text p .icon2 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../images/icon.png") no-repeat center center;
+}
+
+.foot .main .footLogo .text p .icon3 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../images/icon4.png") no-repeat center center;
+}
+
+.foot .main .footLogo .text p .icon4 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../images/icon5.png") no-repeat center center;
+}
+
+.foot .main .footLogo .text p .icon5 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../images/icon5.png") no-repeat center center;
+}
+
+.foot .main .footLogo .text p a:hover {
+    color: purple;
+}
+
+.foot .main .footBottom{
+    text-align: center;
+    padding: 35px 0;   
+}
+
+.foot .main .footBottom p {
+    font-size: 12px;
+    color:gray ;
+    line-height: 20px;
+}
+.nav-lift{
+    position: fixed;
+    z-index: 9999;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-lift .right li {
+    width: 133px;
+    height: 74px;
+   background:url('../images/bg1.jpg')no-repeat ;
+}
+.nav-lift .right .nav1::after{
+    content: "联系客服";
+    display: inline-block;
+    width: 100px;
+    color: beige;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.nav-lift .right .nav1 {
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    top: 24px;
+    width: 25px;
+    height: 25px;
+    background: url(..//images/guide-icon.jpg) 25px 111px;
+}
+.nav-lift .right .nav2::after{
+    content: "账号找回";
+    display: inline-block;
+    width: 100px;
+    color: beige;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.nav-lift .right .nav2 {
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    top: 103px;
+    width: 25px;
+    height: 25px;
+    background: url(..//images/guide-icon.jpg) 25px 67px;
+}
+.nav-lift .right .nav3::after{
+    content: "立即充值";
+    display: inline-block;
+    width: 100px;
+    color: beige;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.nav-lift .right .nav3 {
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    top: 174px;
+    width: 25px;
+    height: 25px;
+    background: url(..//images/guide-icon.jpg) 25px 25px;
+}
+.nav-lift .right  .nav1 img{
+    width: 100%;
+}

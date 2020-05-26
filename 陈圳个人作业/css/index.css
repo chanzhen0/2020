@@ -1,0 +1,689 @@
+nav{
+    width: 1519px;
+    height: 960px;
+    background: url(../images/怀旧2.jpg) no-repeat;
+    background-position: -470px 40px;
+}
+.left{
+    height: 40px;
+    position: relative;
+    background-color: #2b2828;
+}
+nav .log{
+    float: left;
+    width: 62px;
+    height: 40px;
+    margin-left: 20px;
+    background: url(../images/jing.png)-18px 50px;
+    margin-top: -5px;
+}
+nav .left li a:hover{
+ color:beige;
+}
+nav .left li .jian{
+    display: inline-block;
+    width: 14px;
+    height: 7px;
+    margin-left: 4px;
+    background: url(../images/jing.png);
+    background-position: -147px -131px;
+    background-repeat: no-repeat;
+}
+nav .left li {
+    float: left;
+    line-height: 40px;
+    margin-left: 57px;
+    text-align: center;
+    font-size: 16px;
+ 
+}
+nav .left .right{
+    float: right;
+    padding-right: 25px;
+    margin-left: 11px;
+}
+nav .left li a {
+   
+    color: #73736c;
+}
+nav .left li .you{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    height: 180px;
+    width: 1519px;
+    background-color: #250505;
+    border: 1px solid #00BCD4;
+}
+nav .left .you .xi li {
+    width: 144px;
+    height: 180px;
+    margin-top: 30px;
+    float: left;
+    margin: 0;
+    margin-left: 22px;
+    margin-top: 40px;
+}
+nav .left  .you .xi li img{
+    width: 100%;
+}
+nav .left  .you{
+    display: none;
+}
+nav .left li:hover .you{
+    display: block;
+}
+.ding h1{
+    position: absolute;
+    right: 100px;
+    top: 280px;
+}
+.ding .shang{
+    position: absolute;
+    right: 228px;
+    bottom: 145px;
+    color: #ffff;
+    letter-spacing: 8px;
+    margin-left: 24px;
+    font-size: 28px;
+    z-index: 999;
+}
+.ding .xia{
+    position: absolute;
+    right: 245px;
+    top:610px;
+    color: #ffff;
+    font-size: 28px;
+    letter-spacing: 8px;
+    margin-left: 24px;
+}
+.ding .btn {
+    position: absolute;
+    top: 669px;
+    right: 290px;
+    width: 184px;
+    z-index: 9999;
+}
+.ding .btn a img{
+    width: 100%;
+}
+
+.ding .btn h2 {
+    font-size: 14px; 
+}
+.ding .btn h2 a:hover{
+    color:beige;
+}
+.ding .btn h2 a{
+    color: black;
+    position: absolute;
+    left: 62px;
+    top: 19px;
+}
+.zhong{
+    width: 1519px;
+    height: 100px;
+    background:url('../images/背景大图1.jpg') -210px -951px; 
+}
+.inif{
+    width: 1519px;
+    height: 568px;
+    top: -64px;
+    background: url(https://blz.nosdn.127.net/1/tm/wow/classic/0827/classic-info-bg.jpg) no-repeat 50% 0;
+    padding-bottom: 103px;
+    position: relative;
+}
+.inif .p1 {
+    padding-top: 100px;
+    text-align: center;
+}
+.inif .p1 p{
+    font-size: 26px;
+    color: #ffff;
+}
+.inif .p1 h2{
+    color: #ebdec2;
+    display: grid;
+    font-size: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.inif .p1 i{
+    content: "";
+    display: inline-block;
+    background: url(../images/1_wow_wowclassic_F7AY84T6XNPF1555957772757.png) no-repeat 0 0;
+    width: 219px;
+    height: 23px;
+    margin: 20px 647px 0;
+}
+.inif .xi{
+    margin-top: 30px;
+    text-align: center;
+    color: #bdaa;
+}
+.inif .xi p{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.fo {
+    height: 580px;
+    position: relative;
+}
+.fo:before{
+    content: "";
+    height: 25px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    background: url(../images/1_.png);
+}
+.fo::after{
+    content: "";
+    height: 25px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 567px;
+    z-index: 99;
+    background: url(../images/1_.png);
+}
+.fo ul {
+    display: flex;
+    align-items: stretch;
+    margin-top: -65px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.fo ul .ti{
+    border-right: 4px groove #414141;
+    width: 575px;
+    background: url('../images/1_wow_wowclassic_classic_media_ragnaros_thumb.jpg') no-repeat 50% 0;
+    background-size: cover;
+}
+.fo ul li::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    box-shadow: rgba(0,0,0,.75) 0 0 42px 17px inset;
+    background: linear-gradient(0deg,#000 5%,rgba(0,0,0,.827) 25%,rgba(0,0,0,0) 50%);
+}
+.fo ul .ti2{
+    border-right: 4px groove #414141;
+    width: 360px;
+    background: url('../images/1_tm_wow_classic_0827_feature-2.jpg') no-repeat 50% 0;
+    background-size: cover;
+}
+.fo ul .ti3{
+    border-right: 4px groove #414141;
+    width: 565px;
+    background: url('../images/1_wow_wowclassic_classic_media_westfall_thumb.jpg') no-repeat;
+    background-size: cover;
+}
+.fo .ti .titx{
+    position: absolute;
+    bottom: 92px;
+    z-index: 7;
+    text-align: center;
+    margin-left: 70px;
+}
+.fo .ti .titx h3{
+    font-size: 30px;
+    color: rgba(235,222,194,1);
+    letter-spacing: 2px;
+    text-shadow: rgba(0,0,0,1) 0 2px 2px;
+    font-weight: 400;
+}
+.fo .ti .titx p{
+    font-size: 17px;
+    color: #ffff;
+    margin-top: 10px;
+}
+.fo .ti2 .titx{
+    position: absolute;
+    bottom: 92px;
+    z-index: 11;
+    text-align: center;
+}
+.fo .ti2 .titx h3{
+    font-size: 30px;
+    color: rgba(235,222,194,1);
+    letter-spacing: 2px;
+    text-shadow: rgba(0,0,0,1) 0 2px 2px;
+    font-weight: 400;
+}
+.fo .ti2 .titx p{
+    font-size: 17px;
+    color: #ffff;
+    margin-top: 10px;
+}
+.fo .ti3 .titx{
+    position: absolute;
+    bottom: 92px;
+    z-index: 7;
+    text-align: center;
+    margin-left: 70px;
+}
+.fo .ti3 .titx h3{
+    font-size: 30px;
+    color: rgba(235,222,194,1);
+    letter-spacing: 2px;
+    text-shadow: rgba(0,0,0,1) 0 2px 2px;
+    font-weight: 400;
+}
+.fo .ti3 .titx p{
+    font-size: 17px;
+    color: #ffff;
+    margin-top: 10px;
+}
+.g{
+    background: url(../images/1_tm_wow_classic_0827_install-bg.jpg) no-repeat 50% 0;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px; 
+    background-size: cover;
+    height: 1060px;
+}
+
+.g .g1{
+    padding: 91px 470px 57px;
+    position: relative;
+    text-align: center;
+}
+.g .g1 p{
+    font-size: 26px;
+    color: #ffffff;
+}
+.g .g1 h2{
+    color: #ebdec2;
+    font-size: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.g .g1::after{
+    content: "";
+    display: inline-block;
+    background: url('../images/1_wow_wowclassic_F7AY84T6XNPF1555957772757.png') no-repeat 0 0;
+    width: 219px;
+    height: 23px;
+    margin: 20px 0 0;
+}
+.g .g2{
+    max-width: 1550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.g .g2 .p1{
+    width: 29%;
+    margin: 0 2% 40px;
+}
+.g .g2 .p1 h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ebdec2;
+    text-align: center;
+}
+.g .g2 .p1 .t1{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin: 21px 0;
+}
+.g .g2 .p1 .a1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    box-shadow: 0 0 19px rgba(0,0,0,.8);
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: url('../images/1_wow_wowclassic_video-border.png') 72 fill/51px/24px round;
+}
+.g .g2 .p1 a img{
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+}
+.g .g2 .p1 .a2{
+    font-size: 13px;
+    color: #ebdec2;
+    text-align: center;
+}
+.g i{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    margin-top: 27px;
+    background: url(../images/1_wow_wowclassic_LGDJYSOOJXWK1556743575751.png);
+}
+.shi{
+    background: url('../images/1_wow_wowclassic_KDESYB3ATOEQ1555957772526.jpg');
+}
+.shi .pin {
+    padding: 91px 0 57px;
+    text-align: center ;
+    position: relative;
+}
+.shi .pin h2{
+    color: #ebdec2;
+    font-size: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.shi .pin::after{
+    content: "";
+    display: inline-block;
+    background: url('../images/1_wow_wowclassic_F7AY84T6XNPF1555957772757.png') no-repeat 0 0;
+    width: 219px;
+    height: 23px;
+    margin: 20px 0 0;
+}
+.shi ul{
+    text-align: center;
+}
+.shi.m-media-list {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.m-media-list li {
+    width: 355px;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 30px;
+    cursor: pointer;
+}
+.m-media-list li a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    box-shadow: 0 0 17px rgba(0,0,0,.9), 0 0 17px rgba(0,0,0,.9);
+}
+.m-media-list li.video-item video {
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: url(https://wow.nosdn.127.net/1/wow/wowclassic/video-border.png) 72 fill/58px/29px round;
+    width: 97%;
+}
+.shi .m-media-list li {
+    float: none;
+    display: inline-block;
+}
+.m-media-list li img, .m-media-list li video {
+    width: 100%;
+    opacity: .75;
+    transition: opacity .3s;
+    position: relative;
+}
+.m-media-list li.pic-item:after {
+    content: "";
+    position: absolute;
+    left: -31px;
+    padding-top: 75%;
+    width: 118%;
+    z-index: 10;
+    top: -33px;
+    background: url(https://wow.nosdn.127.net/1/wow/wowclassic/video-border.png) no-repeat 0 0;
+    background-size: cover;
+}
+.g-info {
+    text-align: left;
+}
+ .g-info {
+    background: url(https://wow.nosdn.127.net/1/wow/wowclassic/8GKF9JAJWNAF1555957771176.jpg) no-repeat 50% 0;
+    height: 700px;
+    position: relative;
+    margin-bottom: 46px;
+    z-index: 999;
+} 
+.g-info:before {
+    background: url(https://wow.nosdn.127.net/1/wow/wowclassic/SR1X8SNXYYX91555957771860.png) no-repeat 50% 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -42px;
+    height: 116px;
+    width: 100%;
+}
+.g-info:after {
+    background: url(https://wow.nosdn.127.net/1/wow/wowclassic/SYSK17Y9J1NK1555957771866.png) no-repeat 50% 0;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -81px;
+    height: 116px;
+    width: 100%;
+}
+.g-info .m-title {
+    padding-top: 200px;
+    width: 600px;
+    text-align: center;
+}
+.m-title {
+    padding: 91px 0 57px;
+    position: relative;
+}
+.m-title:after {
+    content: "";
+    display: inline-block;
+    background: url(https://wow.nosdn.127.net/1/wow/wowclassic/F7AY84T6XNPF1555957772757.png) no-repeat 0 0;
+    width: 219px;
+    height: 23px;
+    margin: 20px 0 0;
+}
+.m-title p {
+    font-size: 26px;
+    color: #ffff;
+}
+.m-title h2 {
+    color: #ebdec2;
+    font-size: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.classic-btn {
+    background: url(https://blz.nosdn.127.net/1/tm/wow/landing-classic/sprite.png) no-repeat -150px -394px;
+    width: 251px;
+    height: 77px;
+    display: block;
+    margin: 20px auto 0;
+}
+.foot{
+    background-color: black;
+    min-width: 1200px;
+}
+
+.foot .footer{
+    padding-top: 35px;
+}
+
+.foot .main .cooperate{
+margin: 20px 220px 10px;
+}
+
+.foot .main .cooperate>a {
+    float: left;
+}
+
+.foot .main .cooperate a {
+    color: cornsilk;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.foot .main .cooperate p{
+    color: cornsilk;
+    float: right;
+    font-size: 14px;
+}
+
+.foot .main .cooperate h3 span {
+    color: cornsilk;
+}
+
+.foot .main .cooperate a:nth-of-type(1) i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    background: url("../魔兽/images/icon6.png");
+    margin:0 20px;
+}
+
+.foot .main .cooperate a:nth-of-type(2) i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    background: url("../魔兽/images/icon7.png");
+    margin-left:30px;
+    margin-right: 20px;
+}
+
+.foot .main .cooperate p a{
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    width: 96px;
+    background: url("../魔兽/images/雷蛇.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.foot .main .cooperate a:nth-of-type(3) i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    background: url("../魔兽/images/icon7.png");
+    margin-left:30px;
+    margin-right: 20px;
+}
+
+.foot .main .footLogo {
+    margin: 30px 170px 6px;
+}
+
+.foot .main .footLogo .logo {
+    float: left;
+}
+
+.foot .main .footLogo .logo a:nth-of-type(1) {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 85px;
+    width: 140px;
+    background: url("../魔兽/images/Blizzard.png");
+    position: relative;
+    top: 8px;
+    margin-left: 100px;
+}
+
+.foot .main .footLogo .logo a:nth-of-type(2) {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 50px;
+    width: 125px;
+    background: url("../魔兽/images/网易logo.png") no-repeat center center;
+
+}
+
+.foot .main .footLogo .text {
+    float: right;
+    width: 630px;
+}
+
+.foot .main .footLogo .text p,.foot .main .footLogo .text a {
+    color:gray;
+}
+
+.foot .main .footLogo .text p{
+    line-height: 20px;
+}
+
+.foot .main .footLogo .text p:nth-last-of-type(1) {
+    line-height: 35px;
+    vertical-align: bottom;
+}
+
+.foot .main .footLogo .text p:nth-of-type(1) a {
+    color:cornsilk; 
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.foot .main .footLogo .text p span {
+    margin: 0 5px;
+    color: cornsilk;
+}
+
+.foot .main .footLogo .text p .icon1 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url('../魔兽/images/icon.png') no-repeat center center;  
+}
+
+.foot .main .footLogo .text p .icon2 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url('../魔兽/images/icon.png') no-repeat center center;
+}
+
+.foot .main .footLogo .text p .icon3 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../魔兽/images/icon4.png") no-repeat center center;
+}
+
+.foot .main .footLogo .text p .icon4 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../魔兽/images/icon5.png") no-repeat center center;
+}
+
+.foot .main .footLogo .text p .icon5 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px;
+    background:url("../魔兽/images/icon5.png") no-repeat center center;
+}
+
+.foot .main .footLogo .text p a:hover {
+    color: purple;
+}
+
+.foot .main .footBottom{
+    text-align: center;
+    padding: 35px 0;   
+}
+
+.foot .main .footBottom p {
+    font-size: 12px;
+    color:gray ;
+    line-height: 20px;
+}
